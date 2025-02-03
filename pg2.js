@@ -9,7 +9,8 @@ const rl = readline.createInterface({
 rl.question('Enter an integer: ', (input) => {
   const number = parseInt(input, 10);
 
-  if (!isNaN(number)) {
+  if (!isNaN(number))//check not a number,will only pass integer not any other data type like string
+  {
     console.log(`You entered: ${number}`);
   } else {
     console.log('Invalid input. Please enter a valid integer.');

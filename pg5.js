@@ -1,6 +1,4 @@
 const yargs = require('yargs');
-
-// Define a command using yargs
 yargs.command({
   command: 'greet',
   describe: 'Greet the user',
@@ -18,3 +16,7 @@ yargs.command({
 
 // Parse the command-line arguments
 yargs.parse();
+
+
+//to run in terminal
+//node "/Users/david/Desktop/CODING/Node/pg5.js" greet --name=Samuel
